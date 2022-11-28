@@ -15,7 +15,7 @@
         <main>
             <h1>CYK</h1>
             <form>
-              <label for="productions_input">Produktionen:<br></label>
+              <label for="productions_input">Grammar:<br></label>
               <textarea id="productions_input" rows="8" cols="40">
 S → AB ∣ CA ,
 A → BA ∣ b ,
@@ -23,7 +23,7 @@ B → AC ∣ CB ,
 C → AB ∣ a
               </textarea>
               <br>
-              <label for="word_input">Wort:<br></label>
+              <label for="word_input">word<br></label>
               <input type="text" id="word_input" value="baabab">
               <br>
               <button type="button" onclick="render_cyk()">Calculate</button>
