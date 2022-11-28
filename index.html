@@ -5,42 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CYK ALGORITHM</title>
-    <script src="cyk.js"></script>
+    <!-- <p>G Sabarinath<br>
+        AM.EN.U4AIE20026
+    </p> -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="cyk.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    
-
         <main>
-            <h1>CYK</h1>
+            <h1>
+                <u>CYK ALGORITHM</u>
+            </h1>
             <form>
-              <label for="productions_input">Grammar:<br></label>
-              <textarea id="productions_input" rows="8" cols="40">
-S → AB ∣ CA ,
-A → BA ∣ b ,
-B → AC ∣ CB ,
-C → AB ∣ a
-              </textarea>
+              <label for="productions_input">Grammar Definition:<br></label>
+              <textarea id="productions_input" rows="8" cols="40">S → AB | CA ,
+A → BA | b ,
+B → AC | CB ,
+C → AB | a</textarea>
               <br>
-              <label for="word_input">word<br></label>
+              <label for="word_input">Word:<br></label>
               <input type="text" id="word_input" value="baabab">
               <br>
               <button type="button" onclick="render_cyk()">Calculate</button>
             </form>
-            <div id="output">
-            </div>
+            <div id="output"></div>
+            <div id="output-info"></div>
         </main>
-        <!-- <footer>
-
-            <p>
-                G Sabarinath
-                AM.EN.U4AIE20026
-
-            </p>
-        </footer> -->
     </body>
 </html>
 
-
-<script src="index.js"></script>

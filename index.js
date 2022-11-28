@@ -12,9 +12,6 @@ function parse_input() {
     // Replace html/latex arrows through simple - and >
     productions_input = productions_input.replace(/→/g, '->')
 
-    // Replace latex short pipe ∣ with long keyboard pipe |
-    productions_input = productions_input.replace(/∣/g, '|')
-
     const lines = productions_input.split(',')
     let productions = []
     for (let line of lines) {
@@ -33,4 +30,7 @@ function render_cyk() {
     const cyk = new CYK(input)
     const result = cyk.toString()
     document.getElementById("output").innerHTML = result
+
+    document.getElementById('output-info').innerText = 
+        cyk.table[0][cyk.table[0].length - 1].has('S') ? 'Valid' : 'Not valid'
 }

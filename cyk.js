@@ -61,13 +61,14 @@ class CYK {
 
         let output = "<table><tr><th></th>"
         for (let i in this.table[0]) {
-            output += `<th>${Number(i)+1}</th>`
+            output += `<th>${this.table[0].length - Number(i)}</th>`
         }
         output += "</tr>"
         for (let line_index in this.table) {
             output += `<tr><td>${Number(line_index)+1}</td>`
             const line = this.table[line_index]
-            for (let item_set of line) {
+            for (let i = this.table[line_index].length; i > 0; i--) {
+                let item_set = this.table[line_index][i - 1];
                 let item_str = ""
                 if (!item_set) {
                     // This field is not looked at
