@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYK ALGORITHM</title>
+    <script src="cyk.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+
+        <main>
+            <h1>CYK</h1>
+            <form>
+              <label for="productions_input">Produktionen:<br></label>
+              <textarea id="productions_input" rows="8" cols="40">
+S → AB ∣ CA ,
+A → BA ∣ b ,
+B → AC ∣ CB ,
+C → AB ∣ a
+              </textarea>
+              <br>
+              <label for="word_input">Wort:<br></label>
+              <input type="text" id="word_input" value="baabab">
+              <br>
+              <button type="button" onclick="render_cyk()">Calculate</button>
+            </form>
+            <div id="output">
+            </div>
+        </main>
+        <!-- <footer>
+
+            <p>
+                G Sabarinath
+                AM.EN.U4AIE20026
+
+            </p>
+        </footer> -->
+    </body>
+</html>
+
+
+<script src="index.js"></script>
