@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CYK ALGORITHM</title>
-    <!-- <p>G Sabarinath<br>
-        AM.EN.U4AIE20026
-    </p> -->
+
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script src="cyk.js" defer></script>
@@ -16,23 +14,29 @@
 <body>
         <main>
             <h1>
-                <u>CYK ALGORITHM</u>
+                <u>CYK  ALGORITHM</u>
             </h1>
+            <marquee > G Sabarinath - AM.EN.U4AIE20026 </marquee>
+                                    
             <form>
               <label for="productions_input">Grammar Definition:<br></label>
-              <textarea id="productions_input" rows="8" cols="40">S → AB | CA ,
+              <textarea id="productions_input" rows="8" cols="45" placeholder="Define the grammer in the following format:
+
+S → AB | CA ,
 A → BA | b ,
 B → AC | CB ,
-C → AB | a</textarea>
+C → AB | a "></textarea>
               <br>
               <label for="word_input">Word:<br></label>
-              <input type="text" id="word_input" value="baabab">
+              <input type="text" id="word_input" placeholder="enter a string">
               <br>
               <button type="button" onclick="render_cyk()">Calculate</button>
             </form>
             <div id="output"></div>
             <div id="output-info"></div>
         </main>
+        
+
     </body>
 </html>
 

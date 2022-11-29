@@ -32,5 +32,7 @@ function render_cyk() {
     document.getElementById("output").innerHTML = result
 
     document.getElementById('output-info').innerText = 
-        cyk.table[0][cyk.table[0].length - 1].has('S') ? 'Valid' : 'Not valid'
+        cyk.table[0][cyk.table[0].length - 1].has('S') ? 'yes, it is Valid becase the first box contains S' : 'Not valid, becase the first box do not contains S'
 }
+
+

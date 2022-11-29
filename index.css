@@ -93,10 +93,7 @@ label {
     margin-bottom: 4px;
 }
 
-#output-info{
-    text-decoration: black;
+#output-info {
+    text-decoration: rgb(63, 54, 54);
     font-weight: bold;
-    
-
-
 }

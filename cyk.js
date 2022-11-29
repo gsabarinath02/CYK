@@ -73,7 +73,7 @@ class CYK {
                 if (!item_set) {
                     // This field is not looked at
                 } else if (item_set.size == 0) {
-                    item_str = "-"
+                    item_str = "∅"
                 } else {
                     item_str = Array.from(item_set).join()
                 }
