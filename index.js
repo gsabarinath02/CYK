@@ -31,8 +31,17 @@ function render_cyk() {
     const result = cyk.toString()
     document.getElementById("output").innerHTML = result
 
+    document.querySelectorAll('#output td').forEach(td => {
+        if (td.innerText === '') td.classList.add('empty');
+    })
+
     document.getElementById('output-info').innerText = 
         cyk.table[0][cyk.table[0].length - 1].has('S') ? 'yes, it is Valid becase the first box contains S' : 'Not valid, becase the first box do not contains S'
-}
+
+    document.querySelectorAll('#output td').forEach(td => {
+        if (td.innerText === '') td.classList.add('empty');
+    })
+    
+    }
 
 
